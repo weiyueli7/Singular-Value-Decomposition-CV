@@ -255,7 +255,7 @@ def main(hyperparameters):
     print("All Trainings Done! Please check the saved images in `out_images` folder in the same directory:)")
     return
 
-parser = argparse.ArgumentParser(description = 'CSE151B PA1')
+parser = argparse.ArgumentParser(description = 'Experiment')
 parser.add_argument('--batch-size', type = int, default = 32,
         help = 'input batch size for training (default: 1)')
 parser.add_argument('--epochs', type = int, default = 100,
@@ -271,4 +271,5 @@ parser.add_argument('--svd-limit', type = int, default = 3,
         help = 'singular value decomposition limit')
 
 hyperparameters = parser.parse_args()
+print('Experiment Starts!')
 main(hyperparameters)
